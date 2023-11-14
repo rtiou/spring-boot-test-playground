@@ -1,0 +1,92 @@
+= Spring Boot Test Playground
+Ronaldo Tiou
+:url-repo: https://github.com/rtiou
+:toc:
+
+
+This repository serves as a guide for developers to understand and implement unit tests and integration tests for a basic Spring Boot application. The goal is to provide step-by-step instructions and examples to facilitate the testing process.
+
+== Getting Started
+
+To begin, ensure that you have the following prerequisites installed:
+
+- Java Development Kit (JDK) version 8 or later
+- Maven
+- Git
+
+Clone this repository to your local machine using the following command:
+
+```bash
+git clone <repository_url>
+```
+
+== Project Structure
+
+The project structure is organized as follows:
+
+```
+spring-boot-testing-guide/
+│
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── demo/
+│   │                   └── Application.java       # Main application class
+│   │
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── demo/
+│                       ├── unit/
+│                       │   └── UnitTestExample.java       # Unit test examples
+│                       │
+│                       └── integration/
+│                           └── IntegrationTestExample.java     # Integration test examples
+│
+└── pom.xml (or build.gradle)     # Project configuration file
+```
+
+== Instructions
+
+=== 1. Setting Up the Project
+
+- Ensure you have the necessary dependencies added to your `pom.xml` for testing frameworks such as JUnit, Mockito, etc.
+
+=== 2. Writing Unit Tests
+
+- Navigate to the `src/test/java/com/example/demo/unit/` directory.
+- Create new Java classes for unit tests following naming conventions like `ClassNameTest`.
+- Utilize JUnit and Mockito (if needed) to write unit tests for individual components or methods.
+
+=== 3. Creating Integration Tests
+
+- Move to the `src/test/java/com/example/demo/integration/` directory.
+- Develop Java classes for integration tests targeting the interaction between multiple components or modules.
+- Use appropriate testing techniques to validate interactions and behaviors across these components.
+
+=== 4. Running Tests
+
+- Execute tests using your build tool (Maven or Gradle) from the terminal:
+  
+```bash
+mvn test
+```
+
+=== 5. Continuous Integration (CI)
+
+- Integrate these tests into your Continuous Integration (CI) pipeline to automate testing on code changes.
+
+== Contribution
+
+Contributions to improve this guide are welcome! If you have any suggestions, improvements, or new examples to add, please create a pull request.
+
+== License
+
+This project is licensed under the [MIT License](LICENSE).
+
+Feel free to reach out to the contributors or open issues for any questions or concerns regarding this guide.
+
+Happy Testing! 🚀🧪
